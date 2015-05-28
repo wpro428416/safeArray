@@ -29,11 +29,12 @@ void SafeArray::isFull(int loc){
 
 }
 
-void SafeArray::append(int element,int loc){
+int & SafeArray::operator[](int loc){
     isFull(loc);
-    Array[loc-1]=element;
+    return Array[loc];
 }
 
+//int SafeArray::operator<<(int num){}
 //void SafeArray::addSize(){
 //
 //}

@@ -12,10 +12,10 @@ int main(){
         if(loc<0){
             break;
         }
-        num.append(element,loc);
+        num[loc]=element;
     }
     for(int i=0;i<num.maxSize;i++){
-        cout<<num.Array[i]<<endl;
+        cout<<num[i]<<endl;
     }
     return 0;
 }

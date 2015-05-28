@@ -4,12 +4,14 @@
 class SafeArray
 {
 private:
+    int * Array;
 
-
-public:int maxSize;int * Array;
+public:
+    int maxSize;
     SafeArray();
     ~SafeArray();
-    void append(int element,int loc);
+    int &operator[](int loc);
+    //int operator<<(int num);
     void isFull(int loc);
     //void addSize();
 };
